@@ -1,0 +1,11 @@
+<!--*ngIf 隐藏，如果hero刷新则显示-->
+<div *ngIf="ok">
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+
+  </div>
+</div>
